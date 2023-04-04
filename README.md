@@ -45,7 +45,9 @@ Todos devuelven una respuesta JSON con atributos dirección, precio, ciudad, des
 Usando la base de datos de pruebas como ejemplo con las tablas existente, cree una nueva tabla llamada likes con tres atributos: id, created_date, user_id y property_id. Los últimos dos referenciando a las tablas de user y property.
 
 `user_id`: es un entero asociado a la tabla de user, de uno a muchos con la intención de que un usuario pueda darle me gusta a muchas propiedades.
+
 `property_id`: es un entero asociado a la tablea property, de uno a muchos con la intención de que una propiedad pueda tener muchos me gusta.
+
 `created_date`: un tipo de dato fecha y tiempo para saber el momento preciso en que la persona le dio like a cierta propiedad.
 
 También se tuvo en cuenta que se podría agregar otro tipo de atributo como `status` entre activo o inactivo en caso de que no se quisiera eliminar por completo un registro en la tabla al momento de que la persona le quitase el like a cierta propiedad. Creo que para este caso puede ser mejor no tener almacenados tantos registros en la base de datos ya que no aporta valor agregado tener un registro de los cambios de los likes.
