@@ -13,9 +13,11 @@ Una API que hace consultas a la base de datos en raw SQL para traer diferentes d
 **Algunas dudas que tenía al incio**
 
 ¿Cómo hago para ejecutar SQL puro?
+
 Terminé investigando y recordando que una manera sencilla de hacerlo es con SQLAlchemy así que me fuí por esa opción.
 
 ¿Cómo abordar el desarrollo?
+
 No lo tuve muy claro al inicio, pero poco a poco fui resolviendo cada problema al que me enfrentaba y ya empezó a tomar formar junto con la organización de carpetas adecuada y modular.
 
 ## Cómo ejecutar
