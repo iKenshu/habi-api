@@ -28,8 +28,10 @@ Después que hayas instalado las dependencias. Para ejecutar la aplicación con 
 
 ### ENDPOINTS
 
-`/ GET` Esto solo devuelve un mensaje de bienvenida
+`/ GET` Esto solo devuelve un mensaje de bienvenida.
+
 `/property/all GET` Esto devolverá todos los inmuebles que existen en la base de datos con el estado de "pre_venta", "en_venta" y "vendido"
+
 `/property/ GET` Este recibe paramétros query como city, status, year. En caso de no recibir ninguna funcionará igual que `/all/`
 
 Todos devuelven una respuesta JSON con atributos dirección, precio, ciudad, descripción y estado del inmueble.
