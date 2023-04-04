@@ -43,6 +43,7 @@ También se tuvo en cuenta que se podría agregar otro tipo de atributo como `st
 **SQL**
 
 ´´´
+
 CREATE TABLE likes (
     id INT PRIMARY KEY NOT NULL,
     created_date DATETIME NOT NULL,
@@ -53,4 +54,5 @@ CREATE TABLE likes (
     FOREIGN KEY (user_id) REFERENCES user(id),
     FOREIGN KEY (property_id) REFERENCES property(id)
 );
+
 ´´´
