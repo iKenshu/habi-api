@@ -24,22 +24,22 @@ def two_params(status: str, year: int, city: str, query: str) -> str:
     if year and city:
         query += f"AND pt.year = {year} AND pt.city = '{city}'"
     elif year and status:
-        query += f"AND pt.year = {year} AND st.name = '{status}'"
+        query += f"AND pt.year = {year} AND s.name = '{status}'"
     elif status and city:
-        query += f"AND st.name = '{status}' AND pt.city = '{city}'"
+        query += f"AND s.name = '{status}' AND pt.city = '{city}'"
     return query
 
 
 def compare_params(status: str, year: int, city: str, query: str) -> str:
     """Function to compare all the params and return the query"""
     if status and year and city:
-        query += f"AND pt.year = {year} AND st.name = '{status}' AND pt.city = '{city}'"
+        query += f"AND pt.year = {year} AND s.name = '{status}' AND pt.city = '{city}'"
     elif (status or year) and (city or status) and (city or year):
         query = two_params(status, year, city, query)
     elif year:
         query += f"AND pt.year = {year}"
     elif status:
-        query += f"AND st.name = '{status}'"
+        query += f"AND s.name = '{status}'"
     elif city:
         query += f"AND pt.city = '{city}'"
     return query
